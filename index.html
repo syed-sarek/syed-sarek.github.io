@@ -5,87 +5,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Syed Abdul Sarek - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
             line-height: 1.6;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
         }
         .container {
-            width: 80%;
+            width: 90%;
+            max-width: 1200px;
             margin: auto;
-            overflow: hidden;
         }
         header {
-            background: #333;
+            background: #0073e6;
             color: #fff;
-            padding-top: 30px;
-            min-height: 70px;
-            border-bottom: #0779e4 3px solid;
+            padding: 20px 0;
+            text-align: center;
         }
         header h1 {
-            text-align: center;
-            text-transform: uppercase;
-            margin: 0;
-            font-size: 24px;
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 18px;
         }
         nav {
             display: flex;
             justify-content: center;
-            margin: 20px 0;
+            padding: 20px;
+            background: #f9f9f9;
         }
         nav a {
-            color: #333;
+            color: #0073e6;
             text-decoration: none;
-            font-size: 16px;
             padding: 10px 20px;
-            border: 1px solid #333;
-            margin: 5px;
+            margin: 0 10px;
             border-radius: 5px;
+            border: 1px solid #0073e6;
         }
         nav a:hover {
-            background-color: #0779e4;
-            color: white;
+            background: #0073e6;
+            color: #fff;
         }
-        .profile, .skills, .education, .employment {
+        section {
+            padding: 40px 0;
             background: #fff;
-            padding: 20px;
-            margin: 20px 0;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
         }
         h2 {
             text-align: center;
             margin-bottom: 20px;
+            font-size: 28px;
+            color: #0073e6;
+        }
+        .profile, .skills, .education, .employment, .certifications, .languages, .awards {
+            padding: 20px;
         }
         ul {
             list-style-type: none;
-            padding: 0;
         }
         ul li {
             padding: 10px;
+            font-size: 16px;
             border-bottom: 1px solid #ccc;
         }
         ul li:last-child {
-            border: none;
+            border-bottom: none;
         }
-        .footer {
-            text-align: center;
+        footer {
+            background: #333;
+            color: #fff;
             padding: 20px;
-            background-color: #333;
-            color: white;
+            text-align: center;
         }
-        .footer a {
-            color: #0779e4;
+        footer a {
+            color: #0073e6;
             text-decoration: none;
         }
     </style>
 </head>
 <body>
+
     <header>
-        <h1>Syed Abdul Sarek - Software Architect</h1>
+        <h1>Syed Abdul Sarek</h1>
+        <p>Software Architect | Tech Lead | DevOps | ERP Expert | DBA</p>
     </header>
 
     <nav>
@@ -93,10 +107,14 @@
         <a href="#skills">Skills</a>
         <a href="#education">Education</a>
         <a href="#employment">Employment</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#languages">Languages</a>
+        <a href="#awards">Awards</a>
         <a href="#contact">Contact</a>
     </nav>
 
     <div class="container">
+
         <!-- Profile Section -->
         <section id="profile" class="profile">
             <h2>Profile</h2>
@@ -139,6 +157,37 @@
             </ul>
         </section>
 
+        <!-- Certifications Section -->
+        <section id="certifications" class="certifications">
+            <h2>Certifications</h2>
+            <ul>
+                <li>IELTS, British Council, Dhaka (12/2022 – 12/2024) - Overall Band 6.5</li>
+                <li>ISO Certifications for IT Firm, BRAC IT Services Limited, Dhaka (04/2015)</li>
+            </ul>
+        </section>
+
+        <!-- Languages Section -->
+        <section id="languages" class="languages">
+            <h2>Languages</h2>
+            <ul>
+                <li>English - Highly proficient</li>
+                <li>Bangla - Native speaker</li>
+                <li>Urdu - Very good command</li>
+                <li>Hindi - Good working knowledge</li>
+                <li>Arabic - Working Knowledge</li>
+            </ul>
+        </section>
+
+        <!-- Awards Section -->
+        <section id="awards" class="awards">
+            <h2>Awards</h2>
+            <ul>
+                <li>Inter University Debate Champion (2009)</li>
+                <li>Inter University Football Champion (2009)</li>
+                <li>Intra University Cricket Champion (2010)</li>
+            </ul>
+        </section>
+
         <!-- Contact Section -->
         <section id="contact" class="contact">
             <h2>Contact</h2>
@@ -149,10 +198,12 @@
                 <li><a href="https://www.linkedin.com/in/syed-sarek" target="_blank">LinkedIn Profile</a></li>
             </ul>
         </section>
+
     </div>
 
-    <footer class="footer">
+    <footer>
         <p>© 2024 Syed Abdul Sarek | <a href="https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME">Hosted on GitHub</a></p>
     </footer>
+
 </body>
 </html>
